@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Botões Interativos</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h3>@lele.catao__ você está oficialmente intimada a sair comigo na sexta, às 8. Sua única missão: estar linda </h3>
-  <div class="botoes-centro">
-    <button class="nao" id="meuBotao">Não Vou</button>
-    <a href="https://www.youtube.com/watch?v=V0q2fclc2CA">
-      <button class="vou">Eu vou</button>
-    </a>
-  </div>
-  <a href="RafaContra.html"><button class="paraRafa">Para a Rafa</button></a>
+    <div class="wrapper">
+  <button>
+    <a href="home.html">Surpresa</a>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
 
-  <script>
-    const botao = document.getElementById('meuBotao');
-
-    botao.addEventListener('click', () => {
-      const janelaLargura = window.innerWidth;
-      const janelaAltura = window.innerHeight;
-      const novaPosX = Math.random() * (janelaLargura - botao.offsetWidth);
-      const novaPosY = Math.random() * (janelaAltura - botao.offsetHeight);
-
-      botao.style.position = 'absolute';
-      botao.style.left = novaPosX + 'px';
-      botao.style.top = novaPosY + 'px';
-    });
-  </script>
 </body>
 </html>
